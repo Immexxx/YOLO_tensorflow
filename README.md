@@ -75,3 +75,25 @@ According to the LICENSE file of the original code,
 2016/02/16 : Added YOLO_tiny, Fixed bug that ignores one of the boxes in grid when both boxes detected valid objects
 
 2016/08/26 : Uploaded weight file converter! (darknet weight -> tensorflow ckpt)
+
+
+KAR: NOTES:
+
+To install OpenCV: 
+
+
+
+That package is available from the Universe repository, if apt can't find it this probably means you are missing that repo in your sources.
+
+vim  /etc/apt/sources.list
+
+And make sure it includes these lines
+
+deb http://de.archive.ubuntu.com/ubuntu precise main restricted universe   
+deb-src http://de.archive.ubuntu.com/ubuntu precise restricted main multiverse universe
+
+deb http://de.archive.ubuntu.com/ubuntu precise-updates main restricted universe  
+deb-src http://de.archive.ubuntu.com/ubuntu precise-updates restricted main multiverse universe
+
+After adding these lines run apt-get update and try to install the package again. 
+This will install libopencv-dev
