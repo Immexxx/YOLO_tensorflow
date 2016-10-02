@@ -97,3 +97,7 @@ deb-src http://de.archive.ubuntu.com/ubuntu precise-updates restricted main mult
 
 After adding these lines run apt-get update and try to install the package again. 
 This will install libopencv-dev
+
+Then install python-opencv:
+
+apt-get install python-opencv
